@@ -74,7 +74,8 @@ export class Lifecycle extends EventEmitter {
   }
 
   private async doUpload (ctx: IPicGo): Promise<IPicGo> {
-    let type = ctx.getConfig<Undefinable<string>>('picBed.uploader') || ctx.getConfig<Undefinable<string>>('picBed.current') || 'smms'
+    // Just use internal uploader
+    let type = 'internal'
     let uploader = ctx.helper.uploader.get(type)
     let currentTransformer = type
     if (!uploader) {

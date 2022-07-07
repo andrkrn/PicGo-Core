@@ -1,6 +1,6 @@
 {
   "name": "@andrkrn/picgo",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "A tool for picture uploading",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -118,7 +118,7 @@
     "url": "git+https://github.com/PicGo/PicGo-Core.git"
   },
   "picBed": {
-    "current": "smms"
+    "current": "internal"
   },
   "plugins": {},
   "engines": {
